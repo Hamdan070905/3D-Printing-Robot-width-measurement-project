@@ -1,0 +1,24 @@
+Set-Content -Path .gitignore -Value @"
+(ai-env)/
+venv/
+env/
+*.mp4
+*.avi
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.cache
+*.pt
+!runs/segment/train-6/weights/best.pt
+metrology_telemetry.csv
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+images/
+labels/
+train/
+val/
+test/
+"@
