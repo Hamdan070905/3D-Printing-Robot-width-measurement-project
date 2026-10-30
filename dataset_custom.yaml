@@ -1,0 +1,5 @@
+train: D:\New width prj\train
+val: D:\New width prj\val
+nc: 4
+
+names: ["Normal", "Overwidth", "Smughed", "Underwidth"]

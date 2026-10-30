@@ -1,0 +1,8 @@
+# Ultralytics ByteTracker Configuration
+tracker_type: bytetracker
+track_high_thresh: 0.5  # Detection confidence threshold for initial tracking
+track_low_thresh: 0.1   # Lower threshold to recover lost tracks around corners
+new_track_thresh: 0.6   # Threshold to initiate a new track ID
+track_buffer: 60        # Number of frames to buffer a lost track (increase this to 60-90 to prevent ID loss on tight turns!)
+match_thresh: 0.8       # Greediness threshold for matching
+gmc_method: none        # Global Motion Compensation (can be sparseOptFlow if camera moves fast)

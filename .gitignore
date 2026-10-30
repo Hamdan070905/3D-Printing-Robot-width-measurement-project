@@ -1,24 +1,47 @@
 Set-Content -Path .gitignore -Value @"
+# Virtual environments
 (ai-env)/
 venv/
 env/
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# All Videos (test, raw, recorded)
 *.mp4
 *.avi
 *.mkv
+*.mov
+
+# All Images & Thumbnails
 *.jpg
 *.jpeg
 *.png
-*.cache
-*.pt
-!runs/segment/train-6/weights/best.pt
-metrology_telemetry.csv
-__pycache__/
-*.pyc
-.vscode/
-.idea/
+*.bmp
+*.webp
+
+# Raw Training & Validation Data Folders
 images/
 labels/
 train/
 val/
 test/
+*.cache
+
+# Weights & Output Checkpoints (Keeps only production train-6 weights)
+*.pt
+!runs/segment/train-6/weights/best.pt
+runs/detect/
+runs/segment/train/
+runs/segment/train-2/
+runs/segment/train-3/
+runs/segment/train-4/
+runs/segment/train-5/
+runs/segment/val*/
+
+# Large Logs
+metrology_telemetry.csv
 "@

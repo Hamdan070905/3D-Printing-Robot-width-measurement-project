@@ -1,0 +1,4 @@
+Normal
+Overwidth
+Smughed
+Underwidth

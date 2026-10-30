@@ -1,0 +1,24 @@
+# 3D Concrete Printing Metrology ROS 2 Node Configuration
+bead_metrology_node:
+  ros__parameters:
+    # Model parameters
+    model_path: "weights/best.pt"
+    inference_size: 640
+    confidence_threshold: 0.25
+    iou_threshold: 0.50
+
+    # Calibration & Metrology Parameters
+    pixel_to_mm_ratio: 0.32
+    target_min_mm: 40.0
+    target_max_mm: 60.0
+    valid_slice_min_mm: 10.0
+    valid_slice_max_mm: 120.0
+    num_width_nodes: 10
+    temporal_buffer_size: 5
+
+    # Topics & QoS
+    camera_topic: "/gantry_cam/image_raw"
+    telemetry_topic: "/3dcp/metrology_telemetry"
+    annotated_image_topic: "/3dcp/annotated_image"
+    publish_annotated_image: true
+    frame_drop_warn_threshold: 5

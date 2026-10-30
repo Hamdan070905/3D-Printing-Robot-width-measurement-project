@@ -1,0 +1,11 @@
+path: D:/New width prj
+train: train/images
+val: val/images
+test: test/images
+
+nc: 4
+names:
+  0: Normal
+  1: Overwidth
+  2: Smughed
+  3: Underwidth

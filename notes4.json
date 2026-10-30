@@ -1,0 +1,25 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "Normal"
+    },
+    {
+      "id": 1,
+      "name": "Overwidth"
+    },
+    {
+      "id": 2,
+      "name": "Smughed"
+    },
+    {
+      "id": 3,
+      "name": "Underwidth"
+    }
+  ],
+  "info": {
+    "year": 2026,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}
